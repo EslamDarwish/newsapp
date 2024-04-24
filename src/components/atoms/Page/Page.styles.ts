@@ -7,5 +7,5 @@ export const StyledPage = styled(SafeAreaView)<IPageProps>({
   flex: 1,
   height: '100%',
   width: '100%',
-  backgroundColor: colors.bg['500'],
+  backgroundColor: colors.bg['200'],
 });
