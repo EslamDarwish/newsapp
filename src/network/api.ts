@@ -42,7 +42,6 @@ export class API {
     const {data, pathParams} = payload;
     let apiPath = path + `?apiKey=${Config.API_KEY}`;
     let fullPath = pathParams ? parseParams(apiPath, pathParams) : apiPath;
-    console.log('fullPath', fullPath);
     token = token || Config.API_TOKEN;
     switch (endpoint.method) {
       case 'GET':
