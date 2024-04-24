@@ -16,6 +16,6 @@ export interface IArticle {
 export interface IArticlesData {
   articles: IArticle[];
 }
-export interface IArticlesResponse extends IPayload<IArticlesData> {}
+export interface IArticlesResponse extends IArticlesData {}
 
 export interface IArticlesParams {}
