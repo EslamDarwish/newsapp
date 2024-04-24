@@ -1,7 +1,11 @@
 module.exports = {
   root: true,
   extends: '@react-native',
-  plugins: ['@typescript-eslint', 'import'],
+  plugins: [
+    '@typescript-eslint',
+    'import',
+    '@tanstack/eslint-plugin-query/recommended',
+  ],
   rules: {
     semi: ['off'],
     'import/no-unresolved': [2],
@@ -53,6 +57,9 @@ module.exports = {
     'no-shadow': 'off',
     '@typescript-eslint/no-shadow': 'error',
     'react-native/no-inline-styles': 'error',
+    '@tanstack/query/exhaustive-deps': 'error',
+    '@tanstack/query/no-rest-destructuring': 'warn',
+    '@tanstack/query/stable-query-client': 'error',
   },
   settings: {
     'import/resolver': {
