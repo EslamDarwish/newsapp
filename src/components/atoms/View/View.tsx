@@ -1,8 +1,8 @@
-import {View as RNView} from 'react-native';
 import React from 'react';
 import {IViewProps} from './View.types';
+import {StyledView} from './View.styles';
 
 export const View = (props: IViewProps) => {
-  return <RNView>{props.children}</RNView>;
+  return <StyledView>{props.children}</StyledView>;
 };
 export default View;
