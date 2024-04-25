@@ -1,4 +1,6 @@
+import {IArticle} from '../../models/article';
+
 export type IAppParamList = {
   NewsFeed: undefined;
-  NewFeed: undefined;
+  NewFeed: {article: IArticle};
 };
