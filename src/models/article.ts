@@ -12,6 +12,7 @@ export interface IArticle {
   urlToImage: string;
   publishedAt: string;
   content: string;
+  id: string;
 }
 export interface IArticlesData {
   articles: IArticle[];
