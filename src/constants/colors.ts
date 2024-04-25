@@ -33,6 +33,17 @@ export const colors = {
     800: '#b3b3b3',
     900: '#cccccc',
   },
+  grey: {
+    100: '#f2f2f2',
+    200: '#e6e6e6',
+    300: '#d9d9d9',
+    400: '#cccccc',
+    500: '#bfbfbf',
+    600: '#b3b3b3',
+    700: '#a6a6a6',
+    800: '#999999',
+    900: '#8c8c8c',
+  },
   red: {
     100: '#ffe8e8',
     200: '#ffc8c8',
@@ -78,6 +89,14 @@ export const colors = {
     900: '#e63d16',
   },
   bg: {} as IColor,
+  primary: {} as IColor,
+  secondary: {} as IColor,
+  trinary: {} as IColor,
+  muted: {} as IColor,
 };
 
 colors.bg = colors.white;
+colors.primary = colors.lavender;
+colors.secondary = colors.mint;
+colors.trinary = colors.peach;
+colors.muted = colors.grey;
