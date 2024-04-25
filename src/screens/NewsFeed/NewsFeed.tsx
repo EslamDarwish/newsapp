@@ -1,4 +1,4 @@
-import React, {useCallback, useState} from 'react';
+import React, {useCallback, useEffect, useState} from 'react';
 import useNews from '../../data/useNews';
 import {Page} from '../../components/atoms';
 import {FlatList, RefreshControl} from 'react-native-gesture-handler';
@@ -10,10 +10,12 @@ import {Pressable} from 'react-native';
 import {AppRoutes} from '../../navigators/AppNavigator/routes';
 import {INewsFeedScreenNavigationProp} from './NewsFeed.props';
 import {NavigationHeader} from '../../components/atoms/NavigationHeader';
+import {SearchBar} from '../../components/molecules';
 
 export default function NewsFeed() {
-  const {articles, refetch} = useNews();
   const [isRefresh, setRefresh] = useState(false);
+  const [searchString, setSearchString] = useState('');
+  const {articles, refetch} = useNews(searchString);
   const navigation = useNavigation<INewsFeedScreenNavigationProp>();
   const renderArticle = useCallback(
     ({item}: {item: IArticle}) => (
@@ -29,17 +31,24 @@ export default function NewsFeed() {
     refetch().then(() => setRefresh(false));
   }, []);
 
+  useEffect(() => {
+    refetchByUser();
+  }, [searchString]);
   return (
     <Page>
       <NavigationHeader headerTitle="News Feed" />
       <NewsPageContainer>
+        <SearchBar
+          onTextChange={text => setSearchString(text)}
+          debounceTime={200}
+        />
         <FlatList
           refreshControl={
             <RefreshControl refreshing={isRefresh} onRefresh={refetchByUser} />
           }
           data={articles}
           renderItem={renderArticle}
-          keyExtractor={item => item.source.id + item.title}
+          keyExtractor={item => item.id}
         />
       </NewsPageContainer>
     </Page>
