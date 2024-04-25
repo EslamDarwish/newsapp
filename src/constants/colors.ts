@@ -96,7 +96,7 @@ export const colors = {
 };
 
 colors.bg = colors.white;
-colors.primary = colors.lavender;
-colors.secondary = colors.mint;
+colors.primary = colors.black;
+colors.secondary = colors.lavender;
 colors.trinary = colors.peach;
 colors.muted = colors.grey;
