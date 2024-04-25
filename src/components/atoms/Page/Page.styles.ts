@@ -1,9 +1,10 @@
 import styled from 'styled-components/native';
-import {SafeAreaView} from 'react-native-safe-area-context';
 import {colors} from '../../../constants/colors';
 import {IPageProps} from './Page.props';
+import {View} from '../View';
+import {spacing} from '../../../constants';
 
-export const StyledPage = styled(SafeAreaView)<IPageProps>({
+export const StyledPage = styled(View)<IPageProps>({
   flex: 1,
   height: '100%',
   width: '100%',
