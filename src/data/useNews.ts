@@ -17,7 +17,9 @@ const getNews = async () => {
   if (response.ok) {
     return response;
   }
+  return null;
 };
+
 const useNews = () => {
   const query = useQuery({queryKey: ['articles'], queryFn: getNews});
   return {
