@@ -20,9 +20,9 @@ follow the principals of Conventional Commit Messages
 (https://www.conventionalcommits.org/en/v1.0.0-beta.4/) and Atomic Change Commits
 (https://medium.com/@fagnerbrack/one-commit-one-change-3d10b10cebbf).
 ### Screenshots
-<Img src="./src/assets/images/1.png" width="170" height="300" />
-<Img src="./src/assets/images/2.png" width="170" height="300" />
-<Img src="./src/assets/images/3.png" width="170" height="300" />
+<Img src="./src/assets/images/1.png" width="140" height="300" />
+<Img src="./src/assets/images/2.png" width="145" height="300" />
+<Img src="./src/assets/images/3.png" width="160" height="300" />
 
 # Getting Started
 
