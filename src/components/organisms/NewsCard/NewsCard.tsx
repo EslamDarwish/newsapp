@@ -4,6 +4,7 @@ import {INewsCardProps} from './NewsCard.props';
 import {
   StyledCardSpacer,
   StyledNewsCard,
+  StyledNewsCardImage,
   StyledNewsCardSubtitle,
   StyledNewsCardTitle,
 } from './NewsCard.styles';
@@ -11,6 +12,9 @@ import {
 const NewsCard = ({article}: INewsCardProps) => {
   return (
     <StyledNewsCard>
+      {article.urlToImage && (
+        <StyledNewsCardImage source={{uri: article.urlToImage}} />
+      )}
       <StyledNewsCardTitle>{article.title}</StyledNewsCardTitle>
       <StyledCardSpacer />
       {article.author && (
