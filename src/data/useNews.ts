@@ -19,7 +19,7 @@ const getNews = async () => {
   }
 };
 const useNews = () => {
-  const query = useQuery({queryKey: ['todos'], queryFn: getNews});
+  const query = useQuery({queryKey: ['articles'], queryFn: getNews});
   return {
     ...query,
     articles: query?.data?.data?.articles,
