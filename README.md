@@ -1,5 +1,29 @@
 This is a new [**React Native**](https://reactnative.dev) project, bootstrapped using [`@react-native-community/cli`](https://github.com/react-native-community/cli).
 
+# Overview
+### Assignment 
+First Assignment:
+Develop a Newsfeed application using React Native (use react native cli or Expo build tool). The
+application should:
+
+- have a main screen that shows a list of News article headings + picture
+- clicking on a heading should open a detailed screen with the whole news text, bigger picture and
+meta data as author, create date etc
+- the data for the news should be fetched from online news feed (example https://newsapi.org/ or
+other of choise)
+- on top of main screen, there should be a Search field, that will dynamically filter the news by the
+typed word
+- the main screen should have a Pull to refresh functionality that updates the news on screen
+
+Create a github project, and make sperate commits for functionalities. When making changes please
+follow the principals of Conventional Commit Messages
+(https://www.conventionalcommits.org/en/v1.0.0-beta.4/) and Atomic Change Commits
+(https://medium.com/@fagnerbrack/one-commit-one-change-3d10b10cebbf).
+### Screenshots
+<Img src="./src/assets/images/1.png" width="170" height="300" />
+<Img src="./src/assets/images/2.png" width="170" height="300" />
+<Img src="./src/assets/images/3.png" width="170" height="300" />
+
 # Getting Started
 
 >**Note**: Make sure you have completed the [React Native - Environment Setup](https://reactnative.dev/docs/environment-setup) instructions till "Creating a new application" step, before proceeding.
