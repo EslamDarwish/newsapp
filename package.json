@@ -13,7 +13,6 @@
     "@react-navigation/native": "^6.1.17",
     "@react-navigation/native-stack": "^6.9.26",
     "@tanstack/react-query": "^5.32.0",
-    "add": "^2.0.6",
     "apisauce": "^3.0.1",
     "axios": "^1.6.8",
     "axios-retry": "^4.1.0",
@@ -27,13 +26,12 @@
     "react-native-screens": "^3.31.1",
     "react-native-svg": "^13.9.0",
     "styled-components": "^6.1.8",
-    "yarn": "^1.22.22"
+    "@react-native-async-storage/async-storage": "^1.23.1"
   },
   "devDependencies": {
     "@babel/core": "^7.20.0",
     "@babel/preset-env": "^7.20.0",
     "@babel/runtime": "^7.20.0",
-    "@react-native-async-storage/async-storage": "^1.23.1",
     "@react-native/babel-preset": "0.74.81",
     "@react-native/eslint-config": "0.74.81",
     "@react-native/metro-config": "0.74.81",
